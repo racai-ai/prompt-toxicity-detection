@@ -1,0 +1,13 @@
+# Configuration for DeBERTa-v3-large NER (token classification).
+# model_name can be a Hugging Face model ID or a local pretrained model path like
+# file:///absolute/path/to/model or disk:///absolute/path/to/model.
+#
+# Usage:
+#   hner train train.csv dev.csv out/ --config-file conf/bert-ner.yaml
+
+model_type: bert_finetuned
+model_name: microsoft/deberta-v3-large
+metric: f1
+max_sequence_len: 512
+alpha_ce: 0.5
+alpha_dice: 0.5

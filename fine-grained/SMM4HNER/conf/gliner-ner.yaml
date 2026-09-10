@@ -1,0 +1,7 @@
+# Configuration for GliNER zero-shot NER.
+#
+# Usage:
+#   hner train train.csv dev.csv out/ --config-file conf/gliner-ner.yaml
+
+model_type: gliner
+metric: f1

@@ -1,0 +1,10 @@
+# Configuration for LLM NER (Ollama-based, zero-shot or few-shot).
+#
+# Usage:
+#   hner train train.csv dev.csv out/ --config-file conf/llm-ner.yaml
+
+model_type: llm_ner
+ollama_model: gemma3:27b
+ollama_base_url: http://localhost:11434
+max_metric_calls: 30
+eval_sample_size: 50

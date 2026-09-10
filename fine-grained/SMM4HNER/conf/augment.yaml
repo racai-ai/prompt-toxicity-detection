@@ -1,0 +1,10 @@
+# Configuration for data augmentation.
+#
+# Usage:
+#   hner augment input.csv output.csv --config-file conf/augment.yaml
+
+# Augmentation strategy: negate, mangle, or contextual (default: negate)
+strategy: negate
+
+# Ollama model to use for LLM-based strategies
+model: gemma4:31b

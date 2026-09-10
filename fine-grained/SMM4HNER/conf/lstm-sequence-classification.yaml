@@ -1,0 +1,8 @@
+# Configuration for BiLSTM sequence classification.
+#
+# Usage:
+#   hner train train.csv dev.csv out/ --config-file conf/lstm-sequence-classification.yaml
+
+model_type: lstm
+metric: macro_f1
+max_sequence_len: 4096

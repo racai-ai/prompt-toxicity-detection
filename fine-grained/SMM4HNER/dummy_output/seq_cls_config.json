@@ -1,0 +1,11 @@
+{
+  "label_classes": [
+    "safe",
+    "unsafe"
+  ],
+  "has_granular": true,
+  "granular_classes": [
+    "class_a",
+    "class_b"
+  ]
+}

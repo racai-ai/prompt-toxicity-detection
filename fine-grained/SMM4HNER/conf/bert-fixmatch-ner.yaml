@@ -1,0 +1,11 @@
+# Configuration for BERT FixMatch semi-supervised NER.
+#
+# Usage:
+#   hner train train.csv dev.csv out/ --config-file conf/bert-fixmatch-ner.yaml
+
+model_type: bert_fixmatch
+metric: f1
+max_sequence_len: 512
+alpha_ce: 0.5
+alpha_dice: 0.5
+# unlabeled_file: path/to/unlabeled.jsonl

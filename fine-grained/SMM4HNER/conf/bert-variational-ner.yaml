@@ -1,0 +1,10 @@
+# Configuration for BERT variational NER.
+#
+# Usage:
+#   hner train train.csv dev.csv out/ --config-file conf/bert-variational-ner.yaml
+
+model_type: bert_variational
+metric: f1
+max_sequence_len: 512
+alpha_ce: 0.5
+alpha_dice: 0.5

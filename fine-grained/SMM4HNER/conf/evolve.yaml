@@ -1,0 +1,22 @@
+# Configuration for GEPA NER program evolution.
+#
+# Usage:
+#   hner evolve train.csv dev.csv --config-file conf/evolve.yaml
+
+ollama_model: gemma3:27b
+ollama_base_url: http://localhost:11434
+
+# Total evaluate() calls budget for GEPA optimisation
+max_metric_calls: 100
+
+# BERT adapter training epochs per GEPA evaluation
+bert_epochs: 5
+
+# Batch size for BERT adapter training
+bert_batch_size: 16
+
+# Epochs for baseline adapter training on real data
+baseline_epochs: 30
+
+# Directory for GEPA checkpoints and logs
+run_dir: gepa_runs/ner_evolution

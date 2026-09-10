@@ -1,0 +1,14 @@
+# Configuration for DeBERTa-v3-large sequence classification (e.g. SMM4H safe/unsafe).
+#
+# Usage:
+#   hner train train.csv dev.csv out/ --config-file conf/bert-sequence-classification.yaml
+
+model_type: bert_finetuned
+#model_name: answerdotai/ModernBERT-large
+model_name: aubmindlab/bert-large-arabertv02
+metric: macro_f1
+max_sequence_len: 512
+learning_rate: 1.0e-6
+warmup_ratio: 0.1
+weight_decay: 0.0001
+warm_pipeline: true
